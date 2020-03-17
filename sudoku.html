@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sudoku</title>
+</head>
+
+<body>
+    <table class="board">
+        <tr>
+            <td class="block" id="bl00">
+                <table>
+                    <tr>
+                        <td class="cell" id="c00"></td>
+                        <td class="cell" id="c01"></td>
+                        <td class="cell" id="c02"></td>
+                    </tr>
+                    <tr>
+                        <td class="cell" id="c10"></td>
+                        <td class="cell" id="c11"></td>
+                        <td class="cell" id="c12"></td>
+                    </tr>
+                    <tr>
+                        <td class="cell" id="c20"></td>
+                        <td class="cell" id="c21"></td>
+                        <td class="cell" id="c22"></td>
+                    </tr>
+                </table>
+            </td>
+            <td class="block" id="bl01">
+                <table>
+                    <tr>
+                        <td class="cell" id="c03"></td>
+                        <td class="cell" id="c04"></td>
+                        <td class="cell" id="c05"></td>
+                    </tr>
+                    <tr>
+                        <td class="cell" id="c13"></td>
+                        <td class="cell" id="c14"></td>
+                        <td class="cell" id="c15"></td>
+                    </tr>
+                    <tr>
+                        <td class="cell" id="c23"></td>
+                        <td class="cell" id="c24"></td>
+                        <td class="cell" id="c25"></td>
+                    </tr>
+                </table>
+            </td>
+            <td class="block" id="bl02">
+                <table>
+                    <tr>
+                        <td class="cell" id="c06"></td>
+                        <td class="cell" id="c07"></td>
+                        <td class="cell" id="c08"></td>
+                    </tr>
+                    <tr>
+                        <td class="cell" id="c16"></td>
+                        <td class="cell" id="c17"></td>
+                        <td class="cell" id="c18"></td>
+                    </tr>
+                    <tr>
+                        <td class="cell" id="c26"></td>
+                        <td class="cell" id="c27"></td>
+                        <td class="cell" id="c28"></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="block" id="bl10">
+                <table>
+                    <tr>
+                        <td class="cell" id="c30"></td>
+                        <td class="cell" id="c31"></td>
+                        <td class="cell" id="c32"></td>
+                    </tr>
+                    <tr>
+                        <td class="cell" id="c40"></td>
+                        <td class="cell" id="c41"></td>
+                        <td class="cell" id="c42"></td>
+                    </tr>
+                    <tr>
+                        <td class="cell" id="c50"></td>
+                        <td class="cell" id="c51"></td>
+                        <td class="cell" id="c52"></td>
+                    </tr>
+                </table>
+            </td>
+            <td class="block" id="bl11">
+                <table>
+                    <tr>
+                        <td class="cell" id="c33"></td>
+                        <td class="cell" id="c34"></td>
+                        <td class="cell" id="c35"></td>
+                    </tr>
+                    <tr>
+                        <td class="cell" id="c43"></td>
+                        <td class="cell" id="c44"></td>
+                        <td class="cell" id="c45"></td>
+                    </tr>
+                    <tr>
+                        <td class="cell" id="c53"></td>
+                        <td class="cell" id="c54"></td>
+                        <td class="cell" id="c55"></td>
+                    </tr>
+                </table>
+            </td>
+            <td class="block" id="bl12">
+                <table>
+                    <tr>
+                        <td class="cell" id="c36"></td>
+                        <td class="cell" id="c37"></td>
+                        <td class="cell" id="c38"></td>
+                    </tr>
+                    <tr>
+                        <td class="cell" id="c46"></td>
+                        <td class="cell" id="c47"></td>
+                        <td class="cell" id="c48"></td>
+                    </tr>
+                    <tr>
+                        <td class="cell" id="c56"></td>
+                        <td class="cell" id="c57"></td>
+                        <td class="cell" id="c58"></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="block" id="bl20">
+                <table>
+                    <tr>
+                        <td class="cell" id="c60"></td>
+                        <td class="cell" id="c61"></td>
+                        <td class="cell" id="c62"></td>
+                    </tr>
+                    <tr>
+                        <td class="cell" id="c70"></td>
+                        <td class="cell" id="c71"></td>
+                        <td class="cell" id="c72"></td>
+                    </tr>
+                    <tr>
+                        <td class="cell" id="c80"></td>
+                        <td class="cell" id="c81"></td>
+                        <td class="cell" id="c82"></td>
+                    </tr>
+                </table>
+            </td>
+            <td class="block" id="bl21">
+                <table>
+                    <tr>
+                        <td class="cell" id="c63"></td>
+                        <td class="cell" id="c64"></td>
+                        <td class="cell" id="c65"></td>
+                    </tr>
+                    <tr>
+                        <td class="cell" id="c73"></td>
+                        <td class="cell" id="c74"></td>
+                        <td class="cell" id="c75"></td>
+                    </tr>
+                    <tr>
+                        <td class="cell" id="c83"></td>
+                        <td class="cell" id="c84"></td>
+                        <td class="cell" id="c85"></td>
+                    </tr>
+                </table>
+            </td>
+            <td class="block" id="bl22">
+                <table>
+                    <tr>
+                        <td class="cell" id="c66"></td>
+                        <td class="cell" id="c67"></td>
+                        <td class="cell" id="c68"></td>
+                    </tr>
+                    <tr>
+                        <td class="cell" id="c76"></td>
+                        <td class="cell" id="c77"></td>
+                        <td class="cell" id="c78"></td>
+                    </tr>
+                    <tr>
+                        <td class="cell" id="c86"></td>
+                        <td class="cell" id="c87"></td>
+                        <td class="cell" id="c88"></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
